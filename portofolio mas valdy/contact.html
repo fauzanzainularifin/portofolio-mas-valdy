@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devaldy Dzikri Syach M. - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="website-mode">
+  <header class="mock-header">
+    <a href="index.html" class="mock-logo prototype-hotspot" id="s5-logo" data-target="screen-home">VALDY<span>DEV</span></a>
+    <nav class="mock-nav">
+      <a href="index.html" class="mock-nav-item prototype-hotspot" id="s5-nav-home" data-target="screen-home">Home</a>
+      <a href="about.html" class="mock-nav-item prototype-hotspot" id="s5-nav-about" data-target="screen-about">About</a>
+      <a href="skills.html" class="mock-nav-item prototype-hotspot" id="s5-nav-skills" data-target="screen-skills">Skill</a>
+      <a href="projects.html" class="mock-nav-item prototype-hotspot" id="s5-nav-projects" data-target="screen-projects">Project</a>
+      <a href="contact.html" class="mock-nav-item active prototype-hotspot" id="s5-nav-contact" data-target="screen-contact">Contact</a>
+    </nav>
+    <div class="header-actions-group">
+      <a href="about.html" class="mock-btn-cv prototype-hotspot" id="s5-btn-cv" data-target="screen-about">Profil Saya</a>
+      <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+    </div>
+  </header>
+
+  <div class="website-container" id="workspace-website">
+    <main class="mock-main">
+      <div class="contact-section-inner">
+        <!-- Form Left -->
+        <div class="contact-left">
+          <div class="section-badge">HUBUNGI SAYA</div>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <form class="contact-form-sim" onsubmit="event.preventDefault(); triggerSubmitSim();">
+            <input type="text" placeholder="Nama Lengkap Anda" class="contact-input" required />
+            <input type="email" placeholder="Alamat Email Anda" class="contact-input" required />
+            <textarea placeholder="Ceritakan ide atau pesan Anda di sini..." class="contact-textarea" rows="4" required></textarea>
+            <button type="submit" class="contact-btn-submit prototype-hotspot" id="s5-btn-submit" data-target="screen-home">Kirim &amp; Kembali ke Home</button>
+          </form>
+        </div>
+        
+        <!-- Direct Links Right -->
+        <div class="contact-right">
+          <h3>Kontak Langsung</h3>
+          <p>Butuh tanggapan cepat? Hubungi saya langsung melalui platform di bawah ini:</p>
+          <div class="direct-links-grid">
+            <a href="mailto:devaldy.dzikri@example.com" target="_blank" class="contact-social-btn email-btn">
+              <span>Email Saya</span>
+            </a>
+            <a href="https://wa.me/6281234567890?text=Halo%20Devaldy%20saya%20tertarik%20dengan%20portofolio%20Anda" target="_blank" class="contact-social-btn wa-btn">
+              <span>WhatsApp</span>
+            </a>
+            <a href="https://instagram.com/devaldy.dzikri" target="_blank" class="contact-social-btn ig-btn">
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

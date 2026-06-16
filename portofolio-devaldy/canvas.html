@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devaldy Dzikri Syach M. - Figma Canvas Export</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="export-canvas-mode">
+    <div
+      id="workspace-canvas"
+      style="width: 3500px; height: 1600px; position: relative"
+    >
+      <!-- SVG PROTOTYPE WIRES OVERLAY -->
+      <svg id="prototype-svg">
+        <defs>
+          <marker
+            id="arrow"
+            viewBox="0 0 10 10"
+            refX="6"
+            refY="5"
+            markerWidth="6"
+            markerHeight="6"
+            orient="auto-start-reverse"
+          >
+            <path id="arrow-path" d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0c8ce9" />
+          </marker>
+        </defs>
+      </svg>
+
+      <!-- 1. HOME SCREEN FRAME -->
+      <div
+        class="figma-frame"
+        id="screen-home"
+        style="
+          left: 100px;
+          top: 100px;
+          position: absolute;
+          width: 1024px;
+          height: 640px;
+        "
+      >
+        <div class="frame-label">
+          <span class="frame-name">1. Home Screen</span
+          ><span class="frame-size">1024 x 640</span>
+        </div>
+
+        <header class="mock-header">
+          <a
+            href="#screen-home"
+            class="mock-logo prototype-hotspot"
+            id="s1-logo"
+            >VALDY<span>DEV</span></a
+          >
+          <nav class="mock-nav">
+            <a
+              href="#screen-home"
+              class="mock-nav-item active prototype-hotspot"
+              id="s1-nav-home"
+              >Home</a
+            >
+            <a
+              href="#screen-about"
+              class="mock-nav-item prototype-hotspot"
+              id="s1-nav-about"
+              >About</a
+            >
+            <a
+              href="#screen-skills"
+              class="mock-nav-item prototype-hotspot"
+              id="s1-nav-skills"
+              >Skill</a
+            >
+            <a
+              href="#screen-projects"
+              class="mock-nav-item prototype-hotspot"
+              id="s1-nav-projects"
+              >Project</a
+            >
+            <a
+              href="#screen-contact"
+              class="mock-nav-item prototype-hotspot"
+              id="s1-nav-contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions-group">
+            <a
+              href="#screen-about"
+              class="mock-btn-cv prototype-hotspot"
+              id="s1-btn-cv"
+              >Profil Saya</a
+            >
+            <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+          </div>
+        </header>
+
+        <div class="website-container">
+          <main class="mock-main">
+            <div class="hero-section">
+              <div class="hero-left">
+                <div class="hero-tag">CREATIVE DEVELOPMENT &amp; UI/UX</div>
+                <h1 class="hero-title">
+                  Devaldy Dzikri<br /><span>Syach M.</span>
+                </h1>
+                <p class="hero-subtitle">Universitas Sebelas April</p>
+                <p class="hero-desc">
+                  Menghubungkan keindahan desain editorial dengan fungsionalitas
+                  interaksi digital yang responsif untuk menciptakan pengalaman
+                  pengguna yang berkesan.
+                </p>
+                <div class="hero-actions">
+                  <a
+                    href="#screen-about"
+                    class="hero-btn-primary prototype-hotspot"
+                    id="s1-hero-explore"
+                    >Jelajahi Profil</a
+                  >
+                  <a
+                    href="#screen-contact"
+                    class="hero-btn-secondary prototype-hotspot"
+                    id="s1-hero-contact"
+                    >Hubungi Saya</a
+                  >
+                </div>
+              </div>
+
+              <div class="hero-right">
+                <div class="avatar-glow">
+                  <div class="avatar-frame">
+                    <div class="avatar-placeholder">
+                      <span class="avatar-initials">D</span>
+                      <p>EST. 2026</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- 2. ABOUT ME SCREEN FRAME -->
+      <div
+        class="figma-frame"
+        id="screen-about"
+        style="
+          left: 1200px;
+          top: 100px;
+          position: absolute;
+          width: 1024px;
+          height: 640px;
+        "
+      >
+        <div class="frame-label">
+          <span class="frame-name">2. About Me Screen</span
+          ><span class="frame-size">1024 x 640</span>
+        </div>
+
+        <header class="mock-header">
+          <a
+            href="#screen-home"
+            class="mock-logo prototype-hotspot"
+            id="s2-logo"
+            >VALDY<span>DEV</span></a
+          >
+          <nav class="mock-nav">
+            <a
+              href="#screen-home"
+              class="mock-nav-item prototype-hotspot"
+              id="s2-nav-home"
+              >Home</a
+            >
+            <a
+              href="#screen-about"
+              class="mock-nav-item active prototype-hotspot"
+              id="s2-nav-about"
+              >About</a
+            >
+            <a
+              href="#screen-skills"
+              class="mock-nav-item prototype-hotspot"
+              id="s2-nav-skills"
+              >Skill</a
+            >
+            <a
+              href="#screen-projects"
+              class="mock-nav-item prototype-hotspot"
+              id="s2-nav-projects"
+              >Project</a
+            >
+            <a
+              href="#screen-contact"
+              class="mock-nav-item prototype-hotspot"
+              id="s2-nav-contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions-group">
+            <a
+              href="#screen-about"
+              class="mock-btn-cv prototype-hotspot"
+              id="s2-btn-cv"
+              >Profil Saya</a
+            >
+            <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+          </div>
+        </header>
+
+        <div class="website-container">
+          <main class="mock-main">
+            <div class="about-section">
+              <div class="about-left">
+                <div class="portrait-wrapper">
+                  <div class="portrait-placeholder">
+                    <span>DD</span>
+                    <p>PORTRAIT MAHASISWA</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-right">
+                <div class="section-badge">FILOSOFI &amp; LATAR BELAKANG</div>
+                <h2 class="section-title">Latar Belakang Profil</h2>
+                <p class="about-desc">
+                  Halo! Saya <strong>Devaldy Dzikri Syach M.</strong>, seorang
+                  mahasiswa dari <strong>Universitas Sebelas April</strong> yang
+                  mendedikasikan diri pada perancangan web dan pembuatan desain
+                  interface interaktif.
+                </p>
+                <p class="about-desc">
+                  Saya percaya bahwa desain yang baik adalah kombinasi dari
+                  kejelasan struktural, kegunaan praktis, dan keindahan visual.
+                  Bagi saya, web adalah kanvas tempat saya menggabungkan kode
+                  dengan seni.
+                </p>
+
+                <div class="robotic-terminal">
+                  <div class="terminal-header">
+                    <span class="terminal-title"
+                      >PENDIDIKAN &amp; LINIMASA</span
+                    >
+                  </div>
+                  <div class="timeline-list">
+                    <div class="timeline-item">
+                      <div class="timeline-date">2024 - Sekarang</div>
+                      <div class="timeline-title-text">
+                        Universitas Sebelas April
+                      </div>
+                      <div class="timeline-desc">
+                        Mahasiswa Aktif - Mengembangkan pemikiran logis sistem
+                        komputer dan rekayasa digital.
+                      </div>
+                    </div>
+                    <div class="timeline-item">
+                      <div class="timeline-date">2023 - 2024</div>
+                      <div class="timeline-title-text">
+                        Studi Mandiri UI/UX &amp; Web Dev
+                      </div>
+                      <div class="timeline-desc">
+                        Mendalami prinsip-prinsip desain modern (layout grid,
+                        teori warna, responsive development).
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-cta-container">
+                  <a
+                    href="#screen-skills"
+                    class="about-btn-next prototype-hotspot"
+                    id="s2-btn-skills"
+                    >Lihat Kemampuan ➜</a
+                  >
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- 3. SKILLS SCREEN FRAME -->
+      <div
+        class="figma-frame"
+        id="screen-skills"
+        style="
+          left: 2300px;
+          top: 100px;
+          position: absolute;
+          width: 1024px;
+          height: 640px;
+        "
+      >
+        <div class="frame-label">
+          <span class="frame-name">3. Skill Screen</span
+          ><span class="frame-size">1024 x 640</span>
+        </div>
+
+        <header class="mock-header">
+          <a
+            href="#screen-home"
+            class="mock-logo prototype-hotspot"
+            id="s3-logo"
+            >VALDY<span>DEV</span></a
+          >
+          <nav class="mock-nav">
+            <a
+              href="#screen-home"
+              class="mock-nav-item prototype-hotspot"
+              id="s3-nav-home"
+              >Home</a
+            >
+            <a
+              href="#screen-about"
+              class="mock-nav-item prototype-hotspot"
+              id="s3-nav-about"
+              >About</a
+            >
+            <a
+              href="#screen-skills"
+              class="mock-nav-item active prototype-hotspot"
+              id="s3-nav-skills"
+              >Skill</a
+            >
+            <a
+              href="#screen-projects"
+              class="mock-nav-item prototype-hotspot"
+              id="s3-nav-projects"
+              >Project</a
+            >
+            <a
+              href="#screen-contact"
+              class="mock-nav-item prototype-hotspot"
+              id="s3-nav-contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions-group">
+            <a
+              href="#screen-about"
+              class="mock-btn-cv prototype-hotspot"
+              id="s3-btn-cv"
+              >Profil Saya</a
+            >
+            <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+          </div>
+        </header>
+
+        <div class="website-container">
+          <main class="mock-main">
+            <div class="skills-layout">
+              <div class="skills-card">
+                <h3>Visual &amp; Desain</h3>
+                <ul class="skill-bullet-list">
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text"
+                      >UI/UX Design &amp; Figma</span
+                    >
+                    <span class="skill-sub-text"
+                      >User research, design system, prototyping.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Visual Identity</span>
+                    <span class="skill-sub-text"
+                      >Layout, tipografi, harmoni warna.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Mockup Wireframing</span>
+                    <span class="skill-sub-text"
+                      >Pembuatan kerangka visual low &amp; high fidelity.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="skills-card">
+                <h3>Teknologi &amp; Data</h3>
+                <ul class="skill-bullet-list">
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text"
+                      >Web Dev (HTML, CSS, JS)</span
+                    >
+                    <span class="skill-sub-text"
+                      >Responsive layouts, clean code, DOM interaction.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Database (MySQL)</span>
+                    <span class="skill-sub-text"
+                      >Struktur relasional, manipulasi data relasional.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Command Line &amp; Git</span>
+                    <span class="skill-sub-text"
+                      >Version control dasar, command console.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="skills-card">
+                <h3>Profesional &amp; Sosial</h3>
+                <ul class="skill-bullet-list">
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text"
+                      >Komunikasi &amp; Kolaborasi</span
+                    >
+                    <span class="skill-sub-text"
+                      >Kerja sama tim interdisipliner.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Problem Solving</span>
+                    <span class="skill-sub-text"
+                      >Solusi logis untuk kendala visual/program.</span
+                    >
+                  </li>
+                  <li class="skill-bullet-item">
+                    <span class="skill-label-text">Kemampuan Adaptasi</span>
+                    <span class="skill-sub-text"
+                      >Cepat mempelajari tool &amp; framework baru.</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skills-footer">
+              <a
+                href="#screen-projects"
+                class="about-btn-next prototype-hotspot"
+                id="s3-btn-projects"
+                >Lihat Portofolio Proyek ➜</a
+              >
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- 4. PROJECTS SCREEN FRAME -->
+      <div
+        class="figma-frame"
+        id="screen-projects"
+        style="
+          left: 100px;
+          top: 850px;
+          position: absolute;
+          width: 1024px;
+          height: 640px;
+        "
+      >
+        <div class="frame-label">
+          <span class="frame-name">4. Projects Screen</span
+          ><span class="frame-size">1024 x 640</span>
+        </div>
+
+        <header class="mock-header">
+          <a
+            href="#screen-home"
+            class="mock-logo prototype-hotspot"
+            id="s4-logo"
+            >VALDY<span>DEV</span></a
+          >
+          <nav class="mock-nav">
+            <a
+              href="#screen-home"
+              class="mock-nav-item prototype-hotspot"
+              id="s4-nav-home"
+              >Home</a
+            >
+            <a
+              href="#screen-about"
+              class="mock-nav-item prototype-hotspot"
+              id="s4-nav-about"
+              >About</a
+            >
+            <a
+              href="#screen-skills"
+              class="mock-nav-item prototype-hotspot"
+              id="s4-nav-skills"
+              >Skill</a
+            >
+            <a
+              href="#screen-projects"
+              class="mock-nav-item active prototype-hotspot"
+              id="s4-nav-projects"
+              >Project</a
+            >
+            <a
+              href="#screen-contact"
+              class="mock-nav-item prototype-hotspot"
+              id="s4-nav-contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions-group">
+            <a
+              href="#screen-about"
+              class="mock-btn-cv prototype-hotspot"
+              id="s4-btn-cv"
+              >Profil Saya</a
+            >
+            <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+          </div>
+        </header>
+
+        <div class="website-container">
+          <main class="mock-main">
+            <div class="projects-container">
+              <div class="projects-intro">
+                <div class="section-badge">SELEKSI KARYA</div>
+                <h2 class="section-title">Portofolio Proyek</h2>
+              </div>
+
+              <div class="projects-grid-2x2">
+                <a
+                  href="#screen-contact"
+                  class="project-card-compact prototype-hotspot"
+                  id="s4-proj-1"
+                >
+                  <div class="project-image-wrapper">
+                    <img
+                      src="assets/project1.jpg"
+                      alt="Aprilis Academic Portal"
+                    />
+                  </div>
+                  <div class="proj-number">01</div>
+                  <div class="proj-meta">
+                    <h4>Aprilis Academic Portal</h4>
+                    <span class="proj-role-tag"
+                      >UI/UX Design &amp; Research</span
+                    >
+                    <p>
+                      Redesain sistem informasi akademik kampus Universitas
+                      Sebelas April agar lebih ramah pengguna di versi mobile
+                      dan responsif.
+                    </p>
+                    <span class="click-details">Tanya Proyek Ini ↗</span>
+                  </div>
+                </a>
+
+                <a
+                  href="#screen-contact"
+                  class="project-card-compact prototype-hotspot"
+                  id="s4-proj-2"
+                >
+                  <div class="project-image-wrapper">
+                    <img src="assets/project2.jpg" alt="E-Tani Smart Farming" />
+                  </div>
+                  <div class="proj-number">02</div>
+                  <div class="proj-meta">
+                    <h4>E-Tani Smart Farming</h4>
+                    <span class="proj-role-tag">Frontend Development</span>
+                    <p>
+                      Pembuatan dasbor web IoT pemantau kelembapan tanah, suhu
+                      udara, dan prediksi panen untuk petani lokal Kabupaten
+                      Sumedang.
+                    </p>
+                    <span class="click-details">Tanya Proyek Ini ↗</span>
+                  </div>
+                </a>
+
+                <a
+                  href="#screen-contact"
+                  class="project-card-compact prototype-hotspot"
+                  id="s4-proj-3"
+                >
+                  <div class="project-image-wrapper">
+                    <img src="assets/project3.jpg" alt="Veloce E-Commerce UI" />
+                  </div>
+                  <div class="proj-number">03</div>
+                  <div class="proj-meta">
+                    <h4>Veloce E-Commerce UI</h4>
+                    <span class="proj-role-tag">Visual Interface Design</span>
+                    <p>
+                      Konsep antarmuka toko busana minimalis modern dengan fokus
+                      utama pada animasi mikro dan alur pembayaran lancar.
+                    </p>
+                    <span class="click-details">Tanya Proyek Ini ↗</span>
+                  </div>
+                </a>
+
+                <a
+                  href="#screen-contact"
+                  class="project-card-compact prototype-hotspot"
+                  id="s4-proj-4"
+                >
+                  <div class="project-image-wrapper">
+                    <img src="assets/project4.jpg" alt="Nexa Encrypted Chat" />
+                  </div>
+                  <div class="proj-number">04</div>
+                  <div class="proj-meta">
+                    <h4>Nexa Encrypted Chat</h4>
+                    <span class="proj-role-tag">Fullstack Development</span>
+                    <p>
+                      Desain dan pengembangan aplikasi obrolan web real-time
+                      yang diamankan dengan enkripsi ujung-ke-ujung
+                      (end-to-end).
+                    </p>
+                    <span class="click-details">Tanya Proyek Ini ↗</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <!-- 5. CONTACT SCREEN FRAME -->
+      <div
+        class="figma-frame"
+        id="screen-contact"
+        style="
+          left: 1200px;
+          top: 850px;
+          position: absolute;
+          width: 1024px;
+          height: 640px;
+        "
+      >
+        <div class="frame-label">
+          <span class="frame-name">5. Contact Screen</span
+          ><span class="frame-size">1024 x 640</span>
+        </div>
+
+        <header class="mock-header">
+          <a
+            href="#screen-home"
+            class="mock-logo prototype-hotspot"
+            id="s5-logo"
+            >VALDY<span>DEV</span></a
+          >
+          <nav class="mock-nav">
+            <a
+              href="#screen-home"
+              class="mock-nav-item prototype-hotspot"
+              id="s5-nav-home"
+              >Home</a
+            >
+            <a
+              href="#screen-about"
+              class="mock-nav-item prototype-hotspot"
+              id="s5-nav-about"
+              >About</a
+            >
+            <a
+              href="#screen-skills"
+              class="mock-nav-item prototype-hotspot"
+              id="s5-nav-skills"
+              >Skill</a
+            >
+            <a
+              href="#screen-projects"
+              class="mock-nav-item prototype-hotspot"
+              id="s5-nav-projects"
+              >Project</a
+            >
+            <a
+              href="#screen-contact"
+              class="mock-nav-item active prototype-hotspot"
+              id="s5-nav-contact"
+              >Contact</a
+            >
+          </nav>
+          <div class="header-actions-group">
+            <a
+              href="#screen-about"
+              class="mock-btn-cv prototype-hotspot"
+              id="s5-btn-cv"
+              >Profil Saya</a
+            >
+            <a href="canvas.html" class="mock-btn-figma">Buka di Figma</a>
+          </div>
+        </header>
+
+        <div class="website-container">
+          <main class="mock-main">
+            <div class="contact-section-inner">
+              <div class="contact-left">
+                <div class="section-badge">HUBUNGI SAYA</div>
+                <h2 class="section-title">Hubungi Saya</h2>
+                <form
+                  class="contact-form-sim"
+                  onsubmit="
+                    event.preventDefault();
+                    alert('Pesan Terkirim!');
+                    window.location.hash = '#screen-home';
+                  "
+                >
+                  <input
+                    type="text"
+                    placeholder="Nama Lengkap Anda"
+                    class="contact-input"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Alamat Email Anda"
+                    class="contact-input"
+                    required
+                  />
+                  <textarea
+                    placeholder="Ceritakan ide atau pesan Anda di sini..."
+                    class="contact-textarea"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <button
+                    type="submit"
+                    class="contact-btn-submit prototype-hotspot"
+                    id="s5-btn-submit"
+                  >
+                    Kirim &amp; Kembali ke Home
+                  </button>
+                </form>
+              </div>
+
+              <div class="contact-right">
+                <h3>Kontak Langsung</h3>
+                <p>
+                  Butuh tanggapan cepat? Hubungi saya langsung melalui platform
+                  di bawah ini:
+                </p>
+                <div class="direct-links-grid">
+                  <a href="#" class="contact-social-btn email-btn">
+                    <span>Email Saya</span>
+                  </a>
+                  <a href="#" class="contact-social-btn wa-btn">
+                    <span>WhatsApp</span>
+                  </a>
+                  <a href="#" class="contact-social-btn ig-btn">
+                    <span>Instagram</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ==========================================================================
+      // FIGMA PROTOTYPE WIRES GENERATOR (FOR LUXE TOP-NAV LAYOUT)
+      // ==========================================================================
+      function drawWires() {
+        const svg = document.getElementById("prototype-svg");
+        const canvas = document.getElementById("workspace-canvas");
+        const canvasRect = canvas.getBoundingClientRect();
+
+        // Clear existing paths (except defs/markers)
+        const existingElements = svg.querySelectorAll(
+          "path:not(#arrow-path), circle",
+        );
+        existingElements.forEach((el) => el.remove());
+
+        const connections = [
+          // 1. Home Header Nav items (emerging from BOTTOM edge of horizontal bar)
+          {
+            from: "s1-nav-about",
+            to: "screen-about",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 200,
+          },
+          {
+            from: "s1-nav-skills",
+            to: "screen-skills",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 200,
+          },
+          {
+            from: "s1-nav-projects",
+            to: "screen-projects",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 200,
+          },
+          {
+            from: "s1-nav-contact",
+            to: "screen-contact",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 200,
+          },
+
+          // 2. Home Hero CTA buttons
+          {
+            from: "s1-hero-explore",
+            to: "screen-about",
+            fromPos: "right",
+            toPos: "left",
+          },
+          {
+            from: "s1-hero-contact",
+            to: "screen-contact",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 400,
+          },
+
+          // 3. About CTA Button
+          {
+            from: "s2-btn-skills",
+            to: "screen-skills",
+            fromPos: "right",
+            toPos: "left",
+          },
+
+          // 4. Skills CTA Button
+          {
+            from: "s3-btn-projects",
+            to: "screen-projects",
+            fromPos: "bottom",
+            toPos: "top",
+            xOffset: 500,
+          },
+
+          // 5. Projects Cards
+          {
+            from: "s4-proj-1",
+            to: "screen-contact",
+            fromPos: "right",
+            toPos: "left",
+          },
+          {
+            from: "s4-proj-2",
+            to: "screen-contact",
+            fromPos: "right",
+            toPos: "left",
+          },
+
+          // 6. Contact Submit Button back to Home
+          {
+            from: "s5-btn-submit",
+            to: "screen-home",
+            fromPos: "left",
+            toPos: "bottom",
+          },
+        ];
+
+        connections.forEach((conn) => {
+          const fromEl = document.getElementById(conn.from);
+          const toEl = document.getElementById(conn.to);
+
+          if (!fromEl || !toEl) return;
+
+          const fromRect = fromEl.getBoundingClientRect();
+          const toRect = toEl.getBoundingClientRect();
+
+          // Compute relative positions inside the 1x canvas coordinate system
+          const startX_rel = fromRect.left - canvasRect.left;
+          const startY_rel = fromRect.top - canvasRect.top;
+          const endX_rel = toRect.left - canvasRect.left;
+          const endY_rel = toRect.top - canvasRect.top;
+
+          let startX, startY;
+          if (conn.fromPos === "right") {
+            startX = startX_rel + fromRect.width;
+            startY = startY_rel + fromRect.height / 2;
+          } else if (conn.fromPos === "bottom") {
+            startX = startX_rel + fromRect.width / 2;
+            startY = startY_rel + fromRect.height;
+          } else if (conn.fromPos === "left") {
+            startX = startX_rel;
+            startY = startY_rel + fromRect.height / 2;
+          } else {
+            startX = startX_rel + fromRect.width / 2;
+            startY = startY_rel;
+          }
+
+          let endX, endY;
+          if (conn.toPos === "left") {
+            endX = endX_rel;
+            endY = endY_rel + toRect.height / 2;
+          } else if (conn.toPos === "top") {
+            // If connection has an xOffset, offset it so that arrows enter the top border neatly
+            endX = endX_rel + (conn.xOffset || toRect.width / 2);
+            endY = endY_rel;
+          } else if (conn.toPos === "bottom") {
+            endX = endX_rel + toRect.width / 2;
+            endY = endY_rel + toRect.height;
+          } else {
+            endX = endX_rel + toRect.width / 2;
+            endY = endY_rel;
+          }
+
+          // Compute Bezier Control Points
+          let cp1x = startX;
+          let cp1y = startY;
+          let cp2x = endX;
+          let cp2y = endY;
+
+          const dx = Math.abs(endX - startX);
+          const dy = Math.abs(endY - startY);
+
+          if (conn.fromPos === "right" || conn.fromPos === "left") {
+            cp1x =
+              conn.fromPos === "right" ? startX + dx * 0.4 : startX - dx * 0.4;
+            cp2x = conn.toPos === "left" ? endX - dx * 0.4 : endX + dx * 0.4;
+          } else if (conn.fromPos === "bottom" || conn.fromPos === "top") {
+            cp1y =
+              conn.fromPos === "bottom" ? startY + dy * 0.4 : startY - dy * 0.4;
+            cp2y = conn.toPos === "top" ? endY - dy * 0.4 : endY + dy * 0.4;
+          }
+
+          // SVG Path
+          const path = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "path",
+          );
+          const dStr = `M ${startX} ${startY} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${endX} ${endY}`;
+          path.setAttribute("d", dStr);
+          path.setAttribute("class", "wire-curve");
+          path.setAttribute("marker-end", "url(#arrow)");
+
+          // Start Anchor Circle
+          const circle = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "circle",
+          );
+          circle.setAttribute("cx", startX);
+          circle.setAttribute("cy", startY);
+          circle.setAttribute("r", "4.5");
+          circle.setAttribute("class", "wire-start-anchor");
+
+          svg.appendChild(path);
+          svg.appendChild(circle);
+        });
+      }
+
+      // Trigger drawing on load and resize
+      window.addEventListener("load", drawWires);
+      window.addEventListener("resize", drawWires);
+
+      // Fallback draw in case load event already passed
+      if (
+        document.readyState === "complete" ||
+        document.readyState === "interactive"
+      ) {
+        setTimeout(drawWires, 500);
+      }
+    </script>
+  </body>
+</html>

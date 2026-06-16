@@ -7,16 +7,18 @@ echo        Atas Nama: Devaldy Dzikri Syach M.
 echo ===============================================================
 echo.
 echo Cara Pasang / Import ke Figma menggunakan html.to.design:
+echo.
+echo Opsi A: Menggunakan Versi Live (Rekomendasi - Lebih Praktis!)
+echo 1. Buka Figma Anda (aplikasi desktop atau figma.com di browser).
+echo 2. Buka menu Plugins, cari dan jalankan: html.to.design
+echo 3. Masukkan URL berikut: https://portofolio-devaldy.vercel.app/canvas.html
+echo 4. Klik "Import". Canvas prototype akan otomatis masuk dan tersusun rapi!
+echo.
+echo Opsi B: Menggunakan Server Lokal (Jika ingin impor hasil perubahan lokal)
 echo 1. Biarkan jendela server ini tetap terbuka (jangan ditutup).
-echo 2. Buka aplikasi Figma Anda atau figma.com di browser.
-echo 3. Buka menu Plugins di Figma, cari: html.to.design
-echo 4. Masukkan URL tunggal berikut ke kolom input plugin:
-echo.
-echo    http://localhost:8000/canvas.html
-echo.
-echo 5. Pilih resolusi desktop / bebas, lalu klik "Import".
-echo 6. Halaman beserta panah-panah prototype (vector SVG) 
-echo    akan otomatis masuk dan tersusun rapi di Figma Anda!
+echo 2. Buka menu Plugins di Figma, jalankan: html.to.design
+echo 3. Masukkan URL berikut: http://localhost:8000/canvas.html
+echo 4. Klik "Import".
 echo ===============================================================
 echo Menjalankan server lokal di port 8000...
 echo.

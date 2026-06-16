@@ -742,9 +742,152 @@
       </div>
     </div>
 
+    <!-- FIGMA IMPORT PANEL (FLOATING CENTER) -->
+    <div id="figma-import-panel" class="figma-control-panel" data-html2design-ignore="true">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <span class="panel-dot"></span>
+          <h3>Figma Import Center</h3>
+        </div>
+        <button id="btn-minimize-panel" class="panel-minimize-btn" title="Kecilkan Panel">−</button>
+      </div>
+      
+      <div class="panel-body">
+        <p class="panel-intro">Salin URL di bawah dan tempelkan ke plugin <strong>html.to.design</strong> di Figma untuk mengimpor portfolio.</p>
+        
+        <div class="url-list">
+          <!-- Full Canvas Option -->
+          <div class="url-item highlight">
+            <div class="url-label">
+              <span class="label-badge">Rekomendasi</span>
+              <strong>Semua Layar (Canvas)</strong>
+            </div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/canvas.html" id="url-canvas">
+              <button class="btn-copy" onclick="copyUrl('url-canvas', this)">Salin</button>
+            </div>
+          </div>
+          
+          <!-- Individual Pages -->
+          <div class="url-item">
+            <div class="url-label">Home Screen</div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/index.html" id="url-home">
+              <button class="btn-copy" onclick="copyUrl('url-home', this)">Salin</button>
+            </div>
+          </div>
+
+          <div class="url-item">
+            <div class="url-label">About Screen</div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/about.html" id="url-about">
+              <button class="btn-copy" onclick="copyUrl('url-about', this)">Salin</button>
+            </div>
+          </div>
+
+          <div class="url-item">
+            <div class="url-label">Skill Screen</div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/skills.html" id="url-skills">
+              <button class="btn-copy" onclick="copyUrl('url-skills', this)">Salin</button>
+            </div>
+          </div>
+
+          <div class="url-item">
+            <div class="url-label">Certificate Screen</div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/projects.html" id="url-projects">
+              <button class="btn-copy" onclick="copyUrl('url-projects', this)">Salin</button>
+            </div>
+          </div>
+
+          <div class="url-item">
+            <div class="url-label">Contact Screen</div>
+            <div class="url-input-group">
+              <input type="text" readonly value="https://portofolio-devaldy.vercel.app/contact.html" id="url-contact">
+              <button class="btn-copy" onclick="copyUrl('url-contact', this)">Salin</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="instructions-box">
+          <h4>Cara Impor:</h4>
+          <ol>
+            <li>Buka Figma dan jalankan plugin <strong>html.to.design</strong>.</li>
+            <li>Salin salah satu URL di atas.</li>
+            <li>Klik tombol di bawah ini untuk menyembunyikan panel ini agar tidak ikut masuk ke Figma.</li>
+            <li>Paste URL di plugin, pilih viewport desktop, lalu klik <strong>Import</strong>.</li>
+          </ol>
+        </div>
+
+        <button id="btn-hide-panel" class="btn-action-hide">Sembunyikan Panel (Siap Impor)</button>
+      </div>
+    </div>
+
+    <!-- Small restore handle when panel is hidden -->
+    <button id="figma-restore-handle" class="restore-handle-btn" style="display: none;" title="Tampilkan Panel Import" data-html2design-ignore="true">
+      <span class="restore-icon">⚙</span>
+      Tampilkan Panel
+    </button>
+
     <script>
       // ==========================================================================
+      // FIGMA IMPORT PANEL LOGIC
+      // ==========================================================================
+      function copyUrl(inputId, btn) {
+        const input = document.getElementById(inputId);
+        input.select();
+        input.setSelectionRange(0, 99999); // For mobile devices
+        
+        navigator.clipboard.writeText(input.value).then(() => {
+          const originalText = btn.textContent;
+          btn.textContent = "Disalin!";
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.textContent = originalText;
+            btn.classList.remove("copied");
+          }, 2000);
+        }).catch(err => {
+          console.error("Gagal menyalin: ", err);
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const panel = document.getElementById("figma-import-panel");
+        const restoreHandle = document.getElementById("figma-restore-handle");
+        const btnHide = document.getElementById("btn-hide-panel");
+        const btnMinimize = document.getElementById("btn-minimize-panel");
+        const panelBody = panel.querySelector(".panel-body");
+
+        // Hide Panel
+        btnHide.addEventListener("click", () => {
+          panel.style.display = "none";
+          restoreHandle.style.display = "flex";
+        });
+
+        // Restore Panel
+        restoreHandle.addEventListener("click", () => {
+          panel.style.display = "flex";
+          restoreHandle.style.display = "none";
+        });
+
+        // Minimize / Toggle Panel Body
+        btnMinimize.addEventListener("click", () => {
+          if (panelBody.style.display === "none") {
+            panelBody.style.display = "block";
+            btnMinimize.textContent = "−";
+            panel.classList.remove("minimized");
+          } else {
+            panelBody.style.display = "none";
+            btnMinimize.textContent = "+";
+            panel.classList.add("minimized");
+          }
+        });
+      });
+
+      // ==========================================================================
       // FIGMA PROTOTYPE WIRES GENERATOR (FOR LUXE TOP-NAV LAYOUT)
+      // ==========================================================================
       // ==========================================================================
       function drawWires() {
         const svg = document.getElementById("prototype-svg");
